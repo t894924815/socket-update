@@ -6,7 +6,7 @@
     "start": "node filedir.js"
   },
   "dependencies": {
-    "moment": "^2.26.0",
+    "moment": "^2.29.4",
     "serve-handler": "^6.1.2"
   }
 }
