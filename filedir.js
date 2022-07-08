@@ -6,10 +6,7 @@ const dev = require('./DEV')
 let fs = require("fs");
 
 
-const server = http.createServer(/*{
-    key: fs.readFileSync("/Users/jaybor/Desktop/auth-pair/server.key"),
-    cert: fs.readFileSync("/Users/jaybor/Desktop/auth-pair/server.csr")
-},*/(request, response) => {
+const server = http.createServer((request, response) => {
     // You pass two more arguments for config and middleware
     // More details here: https://github.com/zeit/serve-handler#options
     return handler(request, response, {
